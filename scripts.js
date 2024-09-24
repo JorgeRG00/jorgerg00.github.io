@@ -1,6 +1,6 @@
 // Funcionalidad de botón para descargar el CV
 document.getElementById('downloadCV').addEventListener('click', function() {
-    window.open('CV_Jorge_Roldan_Garcia.pdf', '_blank');
+    window.open('./documentos/CV_Jorge_Roldan_Garcia.pdf', '_blank');
 });
 
 // Navegación suave entre secciones
@@ -31,6 +31,6 @@ function typeWriter(text, element, delay) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const title = document.querySelector('.typewriter-text');
+    const title = document.querySelector('.maquina-escribir');
     typeWriter("Jorge Roldán García", title, 100); // Ajusta la velocidad del efecto cambiando el valor de delay
 });
