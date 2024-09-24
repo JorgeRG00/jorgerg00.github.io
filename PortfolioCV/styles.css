@@ -1,0 +1,224 @@
+/* styles.css */
+
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navegación */
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    transition: background 0.3s;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff4081;
+}
+
+/* Encabezado */
+.header-container {
+    text-align: center;
+    padding: 80px 20px 40px;
+    background: linear-gradient(to right, #ff4081, #ffcc00);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-container h1 {
+    font-size: 2.5rem;
+    margin-top: 0.5em;
+    animation: fadeIn 1s ease;
+}
+
+.header-container p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+#downloadCV {
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+#downloadCV:hover {
+    transform: scale(1.05);
+}
+
+/* Secciones */
+section {
+    padding: 60px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+h2 {
+    text-align: center;
+    color: #ff4081;
+}
+
+/* Competencias */
+.competencias-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.competencias-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em;
+}
+
+.competencias-container li {
+    background: #f4f4f4;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: large;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.competencias-container li:hover {
+    transform: translateY(-5px);
+}
+
+.competencias-container img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Experiencia */
+.trabajo {
+    margin-bottom: 20px;
+}
+
+.trabajo h3 {
+    color: #ff4081;
+    transition: color 0.3s;
+}
+
+.trabajo h3:hover {
+    color: #ffcc00;
+}
+
+/* Educación */
+.educacion-item {
+    margin-bottom: 20px;
+}
+
+.educacion-item h3 {
+    color: #ff4081;
+    transition: color 0.3s;
+}
+
+.educacion-item h3:hover {
+    color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.social-media {
+    margin: 10px 0;
+}
+
+.social-media img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.maquina-escribir {
+    border-right: 2px solid #ff4081; /* Color del cursor */
+    white-space: nowrap; /* Evita el salto de línea */
+    overflow: hidden; /* Esconde el texto que no se muestra */
+    animation: blink 0.7s step-end infinite; /* Parpadeo del cursor */
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent; /* El cursor parpadea */
+    }
+}
