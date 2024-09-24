@@ -12,13 +12,13 @@ document.querySelectorAll('nav a').forEach(anchor => {
         const targetSection = document.getElementById(targetId);
 
         window.scrollTo({
-            top: targetSection.offsetTop - 60, // Ajuste para compensar la barra de navegación fija
+            top: targetSection.offsetTop - 60,
             behavior: 'smooth'
         });
     });
 });
 
-function typeWriter(text, element, delay) {
+function maquinaEscribir(text, element, delay) {
     let i = 0;
     function type() {
         if (i < text.length) {
@@ -32,5 +32,5 @@ function typeWriter(text, element, delay) {
 
 document.addEventListener('DOMContentLoaded', function() {
     const title = document.querySelector('.maquina-escribir');
-    typeWriter("Jorge Roldán García", title, 100); // Ajusta la velocidad del efecto cambiando el valor de delay
+    maquinaEscribir("Jorge Roldán García", title, 100);
 });
