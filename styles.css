@@ -228,16 +228,9 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
-    .navbar {
+    .navbar ul {
         flex-direction: column;
         align-items: center;
-        padding: 10px 0;
-    }
-
-    .navbar ul {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        text-align: center;
     }
 
     .navbar a {
