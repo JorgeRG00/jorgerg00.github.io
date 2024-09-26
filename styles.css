@@ -183,6 +183,7 @@ footer {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -193,6 +194,7 @@ footer {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -204,6 +206,7 @@ footer {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -211,21 +214,33 @@ footer {
 }
 
 .maquina-escribir {
-    border-right: 2px solid #ff4081; /* Color del cursor */
-    white-space: nowrap; /* Evita el salto de línea */
-    overflow: hidden; /* Esconde el texto que no se muestra */
-    animation: blink 0.7s step-end infinite; /* Parpadeo del cursor */
+    border-right: 2px solid #ff4081;
+    /* Color del cursor */
+    white-space: nowrap;
+    /* Evita el salto de línea */
+    overflow: hidden;
+    /* Esconde el texto que no se muestra */
+    animation: blink 0.7s step-end infinite;
+    /* Parpadeo del cursor */
 }
 
 @keyframes blink {
     50% {
-        border-color: transparent; /* El cursor parpadea */
+        border-color: transparent;
+        /* El cursor parpadea */
     }
 }
 
 /* Media query para pantallas pequeñas */
 @media only screen and (max-width: 768px) {
+
     /* Ajustes en la barra de navegación */
+    /* Alternativa con position sticky */
+    .navbar {
+        position: sticky;
+        top: 0;
+    }
+
     .navbar ul {
         flex-direction: column;
         align-items: center;
