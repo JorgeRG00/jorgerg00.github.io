@@ -215,40 +215,35 @@ footer {
 
 .maquina-escribir {
     border-right: 2px solid #ff4081;
-    /* Color del cursor */
     white-space: nowrap;
-    /* Evita el salto de línea */
     overflow: hidden;
-    /* Esconde el texto que no se muestra */
     animation: blink 0.7s step-end infinite;
-    /* Parpadeo del cursor */
 }
 
 @keyframes blink {
     50% {
         border-color: transparent;
-        /* El cursor parpadea */
     }
 }
 
-/* Media query para pantallas pequeñas */
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 600px) {
 
-    /* Ajustes en la barra de navegación */
-    /* Alternativa con position sticky */
     .navbar {
-        position: sticky;
-        top: 0;
-    }
-
-    .navbar ul {
         flex-direction: column;
         align-items: center;
         padding: 10px 0;
     }
 
+    .navbar ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .navbar a {
-        padding: 10px 0;
+        margin: 5px 0;
+        font-size: 0.9rem;
     }
 
     /* Encabezado */
